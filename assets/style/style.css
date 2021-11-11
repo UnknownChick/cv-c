@@ -1,0 +1,310 @@
+* {
+     padding: 0;
+     margin: 0;
+     font-family: 'ChelseaMarket';
+}
+
+:root {
+     --orange : #EDB344;
+     --pink: #E87E8D;
+     --green: #D1E7DB;
+     --yellow: #FFE23A;
+     --green2: #63BCA1;
+     --orange2: #B63F05;
+     --red: #A0072C;
+}
+
+@font-face {
+     font-family: 'ChelseaMarket';
+     src: url('../fonts/ChelseaMarket-Regular.ttf');
+}
+
+section {
+     height: 100vh;
+}
+
+h1, h2 {
+     text-transform: uppercase;
+     font-size: 3em;
+}
+
+header {
+     display: flex;
+     justify-content: space-between;
+     height: 20%;
+}
+
+header div img{
+   height: 100%;
+}
+
+
+.text-presentation {
+     height: 80%;
+     display: flex;
+}
+
+.text-presentation div {
+     width: 50%;
+}
+
+.presentation-gauche {
+     background-image: url('../img/presentation/fond_gauche.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: var(--orange);
+     text-align: center;
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+p, li {
+     font-size: 1.5em;
+}
+
+.presentation-droite {
+     background-image: url('../img/presentation/Fond_Droite.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.presentation-droite figure {
+     width: 60%;
+}
+
+#formation {
+     background-image: url('../img/formation/Fond.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formation div {
+     background-image: url('../img/formation/Parchemin.svg');
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+
+     height: 80vh;
+     width: 100%;
+
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+#formation div h2 {
+     color: var(--pink);
+}
+
+#diplome {
+     background-image: url('../img/diplome/Fond.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     color: var(--red);
+     text-align: center;
+}
+
+.diplome_title {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+
+     height: 20%;
+}
+
+.diplome_title div {
+     width: 30%;
+     margin: auto;
+}
+
+.diplome_text {
+     height: 80%;
+     display: flex;
+}
+
+.diplome_text div {
+     width: 25%;
+     margin: auto;
+     background-image: url('../img/diplome/Bol.svg');
+     background-position: bottom;
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 80%;
+
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+}
+
+.diplome_text div p {
+     padding-bottom: 20%;
+}
+
+
+#logiciels {
+     background-image: url('../img/logiciels/Fond.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.element_logiciels {
+     height: 100%;
+     display: flex;
+     justify-content: space-around;
+}
+
+.text_logiciels {
+     background-image: url('../img/logiciels/Serpent.svg');
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     
+     height: 80%;
+     width: 60%;
+     margin: auto 0;
+
+     color: var(--green);
+     text-align: center;
+}
+
+.text_logiciels ul {
+     padding-top: 5em;
+     list-style: none;
+}
+
+.text_logiciels li:not(:last-child) {
+     padding-bottom: 1em;
+}
+
+#logiciels h2 {
+     position: absolute;
+     left: 0; 
+     right: 0;
+     padding-top: 0.5em;
+     width: 100%;
+     color: var(--green2);
+     text-align: center;
+}
+
+#logiciels h2 span {
+     color: var(--yellow);
+}
+
+.icons_logiciels {
+     width: 10%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+#experiences {
+     background-image: url('../img/experiences/Fond.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     display: flex;
+
+     color: var(--orange2) 
+}
+
+#experiences h2 {
+     margin-top: 5%;
+}
+
+.eclair_experiences {
+     background-image: url('../img/experiences/Eclaire.svg');
+     background-position: bottom;
+     background-size: contain;
+     background-repeat: no-repeat;
+
+     width: 35%;
+}
+
+.text_experiences {
+     width: 30%;
+     padding-left: 5%;
+}
+
+.text_experiences ul {
+     list-style: none;
+
+     height:  100%;
+
+     display:  flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+
+
+#interets {
+     background-image: url('../img/centre_d_Interet/Fond.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     color: var(--pink);
+}
+
+#interets span {
+     color: #ffffff;
+}
+
+#interets li:not(:last-child) {
+     padding-bottom: 2em;
+}
+
+#interets div {
+     width: 30%;
+     height: 100%;
+     padding-left: 5%;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#langues_contact {
+     display: flex;
+}
+
+#langues_contact div{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.langues {
+     background-image: url('../img/langues_contact/Fond_langue.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.contact {
+     background-image: url('../img/langues_contact/Fond_contact.svg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
